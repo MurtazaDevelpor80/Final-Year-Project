@@ -1,30 +1,30 @@
 {
-  "name": "cv-craft",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "name": "composetrip-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "proxy": "http://localhost:3000",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/base": "^5.0.0-beta.8",
-    "@mui/icons-material": "^5.14.0",
-    "@mui/material": "^5.14.0",
-    "@mui/x-date-pickers": "^6.11.2",
-    "cookies-next": "^4.1.0",
-    "firebase": "^10.0.0",
-    "jwt-decode": "^3.1.2",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-google-button": "^0.7.2"
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "firebase-admin": "^11.10.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "mongoose": "^7.4.2",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.4",
+    "openai": "^3.3.0",
+    "stripe": "^12.13.0"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && node -r dotenv/config app",
+    "dev": "nodemon -r dotenv/config app"
   }
 }
